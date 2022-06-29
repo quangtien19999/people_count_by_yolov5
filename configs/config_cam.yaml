@@ -1,0 +1,23 @@
+camera_res: [640, 480]
+cameras:
+  - name: 'Camera 1'
+    id: 0
+  - name: 'Camera 2'
+    id: 1
+  - name: 'Camera 3'
+    id: 3
+
+yolo_detector:
+  device: 'cpu'
+  yolo_path: 'yolov5'
+  yolo_weight: 'weights/yolov5n.pt'
+  conf_score_thres: 0.3
+
+plots:
+  bbox_color: [0, 0, 255]
+  ppl_count_text_color: [0, 0, 255]
+  ppl_count_text_pos: [10,30]
+  fps_text_color: [255,0,0]
+  fps_text_pos: [10,470]
+  font_scale: 1
+  thickness: 2
